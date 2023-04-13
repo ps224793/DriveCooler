@@ -27,17 +27,41 @@ include "./bodylayout.html";
         </div>
     </div>
     <br>
-    <div style="height: 150px"></div>
+    <div style="height: 120px"></div>
     <hr style="height:2px;border-width:0;color:black;background-color:black;width: 1000px;">
-    <br>
     <div class="pl-4">
         <h2>Trainingen</h2>
     </div>
     <div>
-        <div class=""></div>
-        <h3></h3>
-        <img src="assets/black.png" style="height: 125px; width: 125px">
-        <img src="assets/black.png" style="height: 125px; width: 125px">
+        <div class="row pl-5">
+            <h5 style="width: 200px"><?php?></h5>
+            <h5>Training Two</h5>
+        </div>
+        <div class="row pl-5">
+            <img src="assets/black.png" style="height: 125px; width: 125px">
+            <div style="width: 75px"></div>
+            <img src="assets/black.png" style="height: 125px; width: 125px">
+        </div>
+        <div style="height: 15px"></div>
+        <div class="row pl-5">
+            <h5 style="width: 200px">Training Three</h5>
+            <h5>Training Four</h5>
+        </div>
+        <div class="row pl-5">
+            <img src="assets/black.png" style="height: 125px; width: 125px">
+            <div style="width: 75px"></div>
+            <img src="assets/black.png" style="height: 125px; width: 125px">
+        </div>
+        <div style="height: 15px"></div>
+        <div class="row pl-5">
+            <h5 style="width: 200px">Training Five</h5>
+            <h5>Training Six</h5>
+        </div>
+        <div class="row pl-5">
+            <img src="assets/black.png" style="height: 125px; width: 125px">
+            <div style="width: 75px"></div>
+            <img src="assets/black.png" style="height: 125px; width: 125px">
+        </div>
     </div>
     <?php?>
 </div>
