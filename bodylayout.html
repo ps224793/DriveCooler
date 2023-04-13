@@ -1,23 +1,37 @@
 <body class="container-fluid overflow-hidden vh-100">
-    <div id="navBar" style="height:70px;background-color:#4D9FFF" class="row">
-      <div class="col-12 row">
-        <div class="col-10 d-block p-3">
-          <h1 style="top:0px;font-size:35px" class="position-relative ">Drive cooler!</h1>
-        </div>
-        <div class="col-2 d-block p-3">
-          <span style="font-size: 50px;left: 15px;" onclick="menu()" class="material-icons position-relative">menu</span>
-        </div>
+  <div id="navBar" style="height:75px;background-color:#4D9FFF" class="row">
+    <div class="col-12 row">
+      <div class="col-10 col-lg-2 d-block p-3">
+        <h1 style="top:0px;font-size:35px" class="position-relative ">Drive cooler!</h1>
       </div>
-      <div id="expanded" style="display: none;" class="col-12 row">
-      <div  class="col">
-          <a class="headerlinks" href="home.php">Home</a>
+
+      <div class="col-2 p-3 d-block d-lg-none">
+        <span style="font-size: 50px;left: 15px;" onclick="menu()"
+          class="material-icons  position-relative">menu</span>
+      </div>
+
+      <div class="col-4 d-none d-lg-flex row">
+        <div class="col-3">
+          <a class="headerlinksdesktop" href="home.php">Home</a>
+        </div>
+        <div class="col-4">
+          <a class="headerlinksdesktop" href="result.php">Resultaten</a>
         </div>
         <div class="col">
-          <a class="headerlinks" href="result.php">Resultaten</a>
-        </div>
-        <div class="col">
-          <a class="headerlinks" href="">Log uit</a>
+          <a class="headerlinksdesktop" href="">Log uit</a>
         </div>
       </div>
     </div>
-    <div class="row h-100">
+    <div id="expanded" style="display: none;" class="col-12 row">
+      <div class="col">
+        <a class="headerlinks" href="home.php">Home</a>
+      </div>
+      <div class="col">
+        <a class="headerlinks" href="result.php">Resultaten</a>
+      </div>
+      <div class="col">
+        <a class="headerlinks" href="">Log uit</a>
+      </div>
+    </div>
+  </div>
+  <div class="row h-100">

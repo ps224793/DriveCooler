@@ -13,7 +13,9 @@
     ?> 
     <title>Document</title>
 </head>
-
+<?php 
+    include_once "./bodylayout.html";
+?>
 <?php 
     include_once "./scriptimports.html";
 ?>
