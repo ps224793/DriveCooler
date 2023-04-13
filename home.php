@@ -19,7 +19,7 @@ include "./bodylayout.html";
 <div>
     <?php
     $rows = $db->GetAllTraining();
-    
+
     ?>
     <div class="pl-5 row">
         <img src="assets/hans.jpg" width="100" height="100" style="position: fixed; top: 120px" class="border border-secondary">
