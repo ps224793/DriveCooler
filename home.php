@@ -35,6 +35,7 @@ $rows = $db->GetAllTraining();
             <span style="font-size: 40px;color:yellow" class="material-icons">local_gas_station</span>
             <span style="font-size: 40px;color:red;" class="material-icons">directions_car</span>
         </div>
+        <p>€20</p>
     </div>
     <div class="col d-none d-md-flex pt-5">
         <?php
