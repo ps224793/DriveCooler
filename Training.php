@@ -25,8 +25,13 @@
 <div>
     <div class="row center-block" >
         <div class="col-12">
-            <iframe width="100%" style="min-height: 300px;"  src="https://www.youtube.com/embed/qQweWffNuD8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h1>training naam</h1>
+            <?php
+                foreach($rows as $row){
+                    if ($row["videoEmbed"] != "")
+                    echo '<iframe width=100% style="min-height:300px;"  ' . "src=$row[videoEmbed] allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share allowfullscreen></iframe>";
+                    echo "<h1>$row[name]</h1>";
+                }
+            ?>
         </div>
     </div>
     
@@ -42,7 +47,7 @@
     <div class="row " >
         <div class="col-6 ">
             <form>
-                
+
             </form>
             <button style="width: 100%;" class="btn btn-primary">complete course</button>
         </div>
