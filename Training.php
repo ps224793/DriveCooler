@@ -22,10 +22,28 @@
 <?php 
     include_once "./bodylayout.html";
 ?>
-    <div class="col-12 center-block" >
-        <iframe width="100%" style="min-height: 300px;"  src="https://www.youtube.com/embed/qQweWffNuD8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div>
+    <div class="row center-block" >
+        <div class="col-12">
+            <iframe width="100%" style="min-height: 300px;"  src="https://www.youtube.com/embed/qQweWffNuD8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h1>training naam</h1>
+        </div>
     </div>
-
+    
+    <div class="row center-block" >
+        <div class="col-12">
+            <?php
+                foreach($rows as $row){
+                    echo "<p>$row[description]</p>";
+                }
+            ?>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-6 float-right">
+            <button class="btn btn-primary">complete course</button>
+        </div>
+    </div>
 </div></div>
 </body>
 </html>
