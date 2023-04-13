@@ -22,12 +22,19 @@ $rows = $db->GetAllTraining();
 
 ?>
 <div class="pl-5 pt-4 col-md-3 col-12">
+    <div class="col-12 row">
+        <div class="col-4">
     <img src="assets/hans.jpg" width="100" height="100" class="border border-secondary">
-    <div>
-        <h2 class="pl-3">Welkom Hans!</h2>
-        <span style="font-size: 40px;" class="material-icons pl-2">thermostat</span>
-        <span style="font-size: 40px;" class="material-icons">local_gas_station</span>
-        <span style="font-size: 40px;" class="material-icons">directions_car</span>
+
+
+        </div>
+        <div class="col">
+        <h2 >Welkom Hans!</h2>
+
+        <span style="font-size: 40px;color: green;" class="material-icons pl-2">thermostat</span>
+        <span style="font-size: 40px;color:yellow" class="material-icons">local_gas_station</span>
+        <span style="font-size: 40px;color:red;" class="material-icons">directions_car</span>
+        </div>
     </div>
 </div>
 <br>
@@ -37,9 +44,9 @@ $rows = $db->GetAllTraining();
             <?php
             $rows = $db->GetAllTraining();
             foreach ($rows as $row) {
-                echo '<div style="max-width:300px;max-height:300px" class="col-12 col-md-4 m-3 overflow-hidden border">';
+                echo '<div style="max-width:300px;max-height:300px;background-color:lightgray;" class="col-12 col-md-4 m-3 overflow-hidden border">';
                 echo "<p>$row[name]<p>";
-                echo "<img style='width:100%' class='m-3' src=assets/$row[imgLocation] >";
+                echo "<img style='width:100%' class='p-3' src=assets/$row[imgLocation] >";
                 echo "<a href=http://drivecooler/Training.php?TrainingId=$row[id] class=stretched-link> <a/>";
                 echo '</div>';
             }
