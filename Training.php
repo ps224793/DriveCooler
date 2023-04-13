@@ -19,20 +19,13 @@
         }
     ?> 
 </head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class=" ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/qQweWffNuD8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>             
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                
-            </div>
-        </div>
+<?php 
+    include_once "./bodylayout.html";
+?>
+    <div class="col-12 center-block" >
+        <iframe width="100%" style="min-height: 300px;"  src="https://www.youtube.com/embed/qQweWffNuD8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
+
+</div></div>
 </body>
 </html>

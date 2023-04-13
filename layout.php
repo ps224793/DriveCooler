@@ -37,9 +37,7 @@
     </div>
   </div>
   <div class="row h-100">
-    <div class="p-3">
       <!-- echo hier -->
-    </div>
   </div>
 
   <!-- Optional JavaScript -->
