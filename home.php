@@ -17,6 +17,10 @@ $db = new DriveCoolerDB();
 include "./bodylayout.html";
 ?>
 <div>
+    <?php
+    $rows = $db->GetAllTraining();
+    
+    ?>
     <div class="pl-5 row">
         <img src="assets/hans.jpg" width="100" height="100" style="position: fixed; top: 120px" class="border border-secondary">
         <div style="position: fixed; left: 150px; top: 120px;">
@@ -34,7 +38,8 @@ include "./bodylayout.html";
     </div>
     <div>
         <div class="row pl-5">
-            <h5 style="width: 200px"><?php?></h5>
+            <h5 style="width: 200px">
+            </h5>
             <h5>Training Two</h5>
         </div>
         <div class="row pl-5">
@@ -63,7 +68,6 @@ include "./bodylayout.html";
             <img src="assets/black.png" style="height: 125px; width: 125px">
         </div>
     </div>
-    <?php?>
 </div>
 <?php
 include_once "./bodylayout.html";
