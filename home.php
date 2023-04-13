@@ -33,13 +33,13 @@ $rows = $db->GetAllTraining();
 <br>
 <div class="pl-4 col-12 col-md-9">
     <h2>Trainingen</h2>
-    <div class="row w-100">
+    <div style="height:100vh" class="row w-100">
             <?php
             $rows = $db->GetAllTraining();
             foreach ($rows as $row) {
                 echo '<div style="max-width:300px;max-height:300px" class="col-12 col-md-4 m-3 overflow-hidden border">';
                 echo "<p>$row[name]<p>";
-                echo "<img src=assets/$row[imgLocation] >";
+                echo "<img style='width:100%' class='m-3' src=assets/$row[imgLocation] >";
                 echo "<a href=http://drivecooler/Training.php?TrainingId=$row[id] class=stretched-link> <a/>";
                 echo '</div>';
             }
