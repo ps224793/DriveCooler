@@ -39,9 +39,12 @@
             ?>
         </div>
     </div>
-    <div class="row" >
-        <div class="col-6 float-right">
-            <button class="btn btn-primary">complete course</button>
+    <div class="row " >
+        <div class="col-6 ">
+            <form>
+                
+            </form>
+            <button style="width: 100%;" class="btn btn-primary">complete course</button>
         </div>
     </div>
 </div></div>
