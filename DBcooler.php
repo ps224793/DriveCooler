@@ -21,10 +21,25 @@
         }
 
         //haal alle trainingen  op
-        function GetTraining(){		
+        function GetAllTraining(){		
             $pdo = new PDO(self::DSN, self::USER, self::PASSWD);
 
             $statement = $pdo->prepare("SELECT * FROM `training`");  
+
+            $statement->execute(); 
+            
+            $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
+            
+            return $rows;
+        }
+
+        //haal 1 training op 
+        function GetTraining($trainingId){		
+            $pdo = new PDO(self::DSN, self::USER, self::PASSWD);
+
+            $statement = $pdo->prepare("SELECT * FROM `training` WHERE `id` = :trainingId");  
+
+            $statement->bindValue(":trainingId", $trainingId, PDO::PARAM_INT);
 
             $statement->execute(); 
             
