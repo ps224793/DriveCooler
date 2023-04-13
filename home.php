@@ -37,7 +37,17 @@ include "./bodylayout.html";
         <h2>Trainingen</h2>
     </div>
     <div>
-        <div class="row pl-5">
+        <?php 
+            $rows = $db->GetAllTraining();
+            foreach($rows as $row){
+                echo '<div class="col-4">';
+                    echo "<p>$row[name]<p>";
+                    echo "<img src=assets/$row[imgLocation] >";
+                    echo "<a href=http://drivecooler/Training.php?TrainingId=$row[id] class=stretched-link> <a/>";
+                echo '</div>';
+            }
+        ?>
+        <!-- <div class="row pl-5">
             <h5 style="width: 200px">
             </h5>
             <h5>Training Two</h5>
@@ -66,7 +76,7 @@ include "./bodylayout.html";
             <img src="assets/black.png" style="height: 125px; width: 125px">
             <div style="width: 75px"></div>
             <img src="assets/black.png" style="height: 125px; width: 125px">
-        </div>
+        </div> -->
     </div>
 </div>
 <?php
